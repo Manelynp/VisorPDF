@@ -12,14 +12,14 @@ The application allows users to interact with PDF forms and prepares their data 
 
 ✨ Features
 
-📄 Display and interact with PDF documents
-📝 Read and process editable PDF form fields
-🔍 Extract PDF form field names and values
-📦 Convert extracted form data into structured JSON
-✍️ Add ink annotations to PDF documents
-🖊️ Capture digital signatures
-🔐 Convert captured signatures to Base64 for data processing
-⚙️ Integrate PDF functionality into an ASP.NET MVC application
+📄 Display and interact with PDF documents 
+📝 Read and process editable PDF form fields 
+🔍 Extract PDF form field names and values 
+📦 Convert extracted form data into structured JSON 
+✍️ Add ink annotations to PDF documents 
+🖊️ Capture digital signatures 
+🔐 Convert captured signatures to Base64 for data processing 
+⚙️ Integrate PDF functionality into an ASP.NET MVC application 
 
 🛠️ Technologies & Tools
 
