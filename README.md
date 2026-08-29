@@ -97,6 +97,7 @@ dotnet run
 
 Then open the local URL shown in the terminal.
 
+
 📸 Screenshots
 
 | PDF Form Editor                                                      | Digital Signature                                                        | Form Data Processing                                                |
@@ -104,23 +105,6 @@ Then open the local URL shown in the terminal.
 | <img src="./img/screenshots/main-interface.PNG" width="100%">        | <img src="img/screenshots/signature-modal.PNG" width="100%">             | <img src="img/screenshots/saved-signature-JSON.PNG" width="100%">             |
 | Main interface displaying and interacting with an editable PDF form. | Signature capture modal used to add a digital signature to the document. | PDF form fields and extracted data prepared for further processing. |
 
-
-📸 Screenshots
-
-PDF Form Editor
-Main interface displaying and interacting with an editable PDF form.
-
-![PDF Form Editor](./img/screenshots/main-interface.PNG)
-
-Digital Signature
-Signature capture modal used to add a digital signature to the document.
-
-![Digital Signature](img/screenshots/signature-modal.PNG)
-
-Form Data Processing
-PDF form fields and extracted data prepared for further processing.
-
-![Form Data Processing](img/screenshots/saved-signature-JSON.PNG)
 
 
 📚 Internship Context
