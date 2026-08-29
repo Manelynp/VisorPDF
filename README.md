@@ -101,9 +101,9 @@ Then open the local URL shown in the terminal.
 📸 Screenshots
 
 <p align="center">
-  <img src="./img/screenshots/main-interface.png" width="32%" />
-  <img src="./img/screenshots/signature-modal.png" width="32%" />
-  <img src="./img/screenshots/saved-signature-json.png" width="32%" />
+  <img src="img/screenshots/main-interface.png" width="32%" />
+  <img src="img/screenshots/signature-modal.png" width="32%" />
+  <img src="img/screenshots/saved-signature-json.png" width="32%" />
 </p>
 
 
