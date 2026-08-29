@@ -1,0 +1,81 @@
+html {
+  font-size: 14px;
+}
+
+@media (min-width: 768px) {
+  html {
+    font-size: 16px;
+  }
+}
+
+.btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
+  box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
+}
+
+html {
+  position: relative;
+  min-height: 100%;
+}
+
+body {
+  margin-bottom: 60px;
+}
+
+#fileInput {
+    background-color: cornflowerblue;
+}
+
+#pdf-container {
+    position: relative;
+}
+
+.page {
+    position: relative;
+    margin-bottom: 10px;
+}
+
+.annotationLayer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    pointer-events: auto;
+}
+
+#pdf-container input[type="text"] {
+    pointer-events: auto;
+}
+
+#pdf-container canvas {
+    pointer-events: none;
+}
+
+#pdf-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-height: 80vh;
+    overflow-y: auto;
+}
+
+.pdf-page {
+    position: relative;
+}
+
+//Issam codigo
+.modal-content {
+    border-radius: 10px;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+}
+
+.modal-header {
+    background-color: #007bff;
+    color: white;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.modal-footer {
+    background-color: #f8f9fa;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}

@@ -1,0 +1,123 @@
+﻿@{
+    ViewData["Title"] = "Editor de PDF";
+}
+
+<div class="text-center">
+    <h1 class="display-4">Editor de PDF</h1>
+
+    <div class="d-flex justify-content-between align-items-center mb-2">
+        <div>
+            <input type="file" id="fileInput" accept="application/pdf" style="display:none">
+
+            <button id="uploadBtn" class="btn btn-secondary">
+                Elegir Archivos
+            </button>
+        </div>
+
+        <button id="openFirmaBtn" class="btn btn-primary">
+            Firmar
+        </button>
+    </div>
+
+    <hr />
+
+    <iframe id="pdfViewer"
+            src="/lib/pdfjs/web/viewer.html?file=/files/sample-form.pdf"
+            width="100%"
+            height="700px"
+            style="border:1px solid #ccc">
+    </iframe>
+
+    <hr />
+    <br>
+
+    <div class="d-flex justify-content-center gap-3 mt-3">
+        <button id="resetBtn" class="btn btn-danger">Cancelar</button>
+        <button id="saveBtn" class="btn btn-success">Guardar</button>
+    </div>
+</div>
+
+<!-- Modal de Firma -->
+<div class="modal fade" id="modalFirmar" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Firme aquí</h5>
+
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Cerrar">
+                    <span aria-hidden="true">&times;</span>
+                </button>
+            </div>
+
+            <div class="modal-body text-center">
+                <canvas id="canvas"
+                        style="border:1px solid #000; width:100%; height:200px; touch-action:none;">
+                </canvas>
+            </div>
+
+            <div class="modal-footer d-flex justify-content-between align-items-center">
+                <button id="togglePenColor"
+                        type="button"
+                        title="Cambiar color"
+                        aria-label="Cambiar color de firma"
+                        style="
+                width:32px;
+                height:32px;
+                border-radius:50%;
+                border:2px solid #6c757d;
+                background:black;
+                padding:0;
+                display:inline-block;
+            ">
+                </button>
+
+                <div>
+                    <button id="btnRestablecer" class="btn btn-secondary" type="button">
+                        <i class="fas fa-eraser"></i> Limpiar
+                    </button>
+
+                    <button id="btnFirmar" class="btn btn-primary" type="button">
+                        <i class="fas fa-check"></i> Confirmar Firma
+                    </button>
+
+                    <button id="btnCancelarFirma" class="btn btn-danger" type="button" data-bs-dismiss="modal">
+                        <i class="fas fa-times"></i> Cancelar
+                    </button>
+                </div>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+<!-- Modal Confirmación Firma -->
+<div class="modal fade" id="modalConfirmacionFirma" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered" role="document">
+        <div class="modal-content">
+
+            <div class="modal-header">
+                <h5 class="modal-title">Firma guardada</h5>
+            </div>
+
+            <div class="modal-body text-center">
+                <p>La firma se guardó correctamente.</p>
+
+                <div style="border:1px solid #ccc; padding:10px;">
+                    <img id="firmaPreviewImg" style="max-width:100%; height:auto;" alt="Vista previa de la firma">
+                </div>
+            </div>
+
+            <div class="modal-footer">
+                <button id="btnOkFirma" class="btn btn-primary" type="button">
+                    OK
+                </button>
+            </div>
+
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script src="~/js/home.js" asp-append-version="true"></script>
+}
