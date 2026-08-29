@@ -100,11 +100,10 @@ Then open the local URL shown in the terminal.
 
 📸 Screenshots
 
-| PDF Form Editor                                                      | Digital Signature                                                        | Form Data Processing                                                |
-| -------------------------------------------------------------------- | ------------------------------------------------------------------------ | ------------------------------------------------------------------- |
-| <img src="./img/screenshots/main-interface.PNG" width="100%">        | <img src="img/screenshots/signature-modal.PNG" width="100%">             | <img src="img/screenshots/saved-signature-JSON.PNG" width="100%">             |
-| Main interface displaying and interacting with an editable PDF form. | Signature capture modal used to add a digital signature to the document. | PDF form fields and extracted data prepared for further processing. |
-
+| PDF Form Editor                                                                                                                          | Digital Signature                                                                                                                           | Form Data Processing                                                                                                                                           |
+| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| <img src="/img/screenshots/main-interface.PNG" width="100%">                                                                                      | <img src="img/screenshots/signature-modal.PNG" width="100%">                                                                                    | <img src="img/screenshots/saved-signature-JSON.PNG" width="100%">                                                                                                        |
+| Main interface displaying and interacting with the PDF form. The page starts with `fp=true`, indicating the PDF is ready for processing. | Signature capture modal used to add a digital signature to the document. The captured signature is converted to Base64 for data processing. | Extracted PDF form data shown as JSON in the console. After the modified PDF is successfully saved, the processing state changes from `fp=true` to `fp=false`. |
 
 
 📚 Internship Context
