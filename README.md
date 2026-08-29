@@ -103,7 +103,7 @@ Then open the local URL shown in the terminal.
 <p align="center">
   <img src="./img/screenshots/main-interface.PNG" width="32%" />
   <img src="img/screenshots/signature-modal.PNG" width="32%" />
-  <img src="img/screenshots/saved-signature-json.PNG" width="32%" />
+  <img src="img/screenshots/saved-signature-JSON.PNG" width="32%" />
 </p>
 
 
