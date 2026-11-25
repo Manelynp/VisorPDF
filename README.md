@@ -1,122 +1,144 @@
-VisorPDF – PDF Form Editor & Data Processing Tool
+# VisorPDF – PDF Form Editor & Data Processing Tool
 
-A web-based PDF form editor and data processing tool developed during a Front-End Development internship. The project focuses on displaying interactive PDF forms, handling form data, annotations, and digital signatures using JavaScript and ASP.NET MVC.
+A collaborative web development project created during a 140-hour Frontend Development internship at **Evolk Bigo Solutions**, Vigo, Spain (March–April 2026).
 
-📌 Project Overview
+VisorPDF extends the frontend functionality of the company's existing ASP.NET MVC application. The project focuses on displaying PDF documents, working with fillable PDF forms, extracting user-entered data and preparing it in JSON format for future backend processing.
 
-This project was developed collaboratively with two classmates during a Front-End Development internship.
+## Project Overview
 
-The team researched and tested different free JavaScript PDF libraries and approaches before integrating the most suitable solutions into an existing ASP.NET MVC project.
+The project was developed by a team of three students. One of the main technical challenges was finding free JavaScript libraries that could support PDF visualization, form field extraction and document interaction within the existing application.
 
-The application allows users to interact with PDF forms and prepares their data for further processing by the backend.
+The team researched and tested different approaches, focusing particularly on **PDF.js** and **pdf-lib**.
 
-✨ Features
+The intended workflow was to load a client's completed PDF form, identify its fields, extract the entered information and organize the results into structured JSON data.
 
-📄 Display and interact with PDF documents
-📝 Read and process editable PDF form fields
-🔍 Extract PDF form field names and values
-📦 Convert extracted form data into structured JSON
-✍️ Add ink annotations to PDF documents
-🖊️ Capture digital signatures
-🔐 Convert captured signatures to Base64 for data processing
-🔄 Track PDF processing state using `fp=true` / `fp=false` to reflect successful PDF modification and saving
-⚙️ Integrate PDF functionality into an ASP.NET MVC application
+## Features
 
+The collaborative project includes the following functionality:
 
-🛠️ Technologies & Tools
+- **PDF Visualization:** Load and display PDF documents within the web application.
+- **Form Field Processing:** Identify editable PDF form fields and retrieve their values.
+- **Data Extraction:** Extract field names and user-entered information.
+- **JSON Preparation:** Organize extracted form data into a structured JSON object.
+- **Digital Signature Handling:** Capture signature input and convert it into Base64 format.
+- **PDF Annotations:** Support ink annotations and PDF document interaction.
+- **Processing State:** Track PDF modification and saving status using `fp=true` and `fp=false`.
 
-HTML5
-CSS3
-JavaScript
-ASP.NET MVC
-C#
-PDF.js
-pdf-lib
-Bootstrap
-jQuery
-JSON
-Visual Studio 2022
+## My Contribution
 
-🏗️ Project Structure
+As part of the three-student development team, my main focus was frontend functionality and PDF form data extraction.
 
+My contributions included:
+
+- Developing and adapting frontend functionality using HTML, CSS and JavaScript within the existing application.
+- Researching and testing PDF.js and pdf-lib to load PDF documents, identify form fields and retrieve their values.
+- Working on JavaScript logic to organize extracted form information into JSON format.
+- Testing and checking the extracted JSON output through the browser console.
+- Collaborating with a teammate on PDF loading and data extraction, while coordinating with the rest of the team on the overall document-processing workflow.
+
+The signature functionality, including signature capture and Base64 conversion, was another part of the team's work.
+
+**Project scope:** The internship focused on frontend development and preparing PDF form data for future backend integration. The extracted JSON was tested in the browser console; full backend integration was outside the scope of my contribution.
+
+## Technologies & Tools
+
+**Frontend**
+- HTML5
+- CSS3
+- JavaScript
+- Bootstrap
+- jQuery
+
+**PDF Processing**
+- PDF.js
+- pdf-lib
+- JSON
+- Base64
+
+**Application & Development Environment**
+- ASP.NET MVC
+- C#
+- Visual Studio 2022
+- .NET 8
+
+## Main Technical Challenges
+
+One of the main challenges was finding suitable free tools for working with interactive PDF documents.
+
+The team explored how to:
+
+1. Load and display PDF documents.
+2. Access the fields of fillable PDF forms.
+3. Retrieve the values entered by users.
+4. Convert the extracted information into structured JSON.
+5. Prepare the data for further processing by the backend.
+
+Working within an existing ASP.NET MVC application also required understanding its frontend structure and adapting JavaScript functionality to the established codebase.
+
+## Project Structure
+
+```text
 VisorPDF/
-│
 ├── Controllers/
 ├── Models/
+├── Properties/
 ├── Views/
 ├── wwwroot/
 │   ├── css/
 │   ├── js/
 │   └── ...
-│
-├── Properties/
 ├── Program.cs
 ├── VisorPDF.csproj
 ├── appsettings.json
-├── appsettings.Development.json
 └── .gitignore
+```
 
+## Running the Project Locally
 
-🔎 Main Technical Challenges
+### Requirements
 
-One of the main challenges was finding a free solution that could display and interact with PDF forms while fitting the existing ASP.NET MVC architecture.
+- .NET 8 SDK
+- Visual Studio 2022 or another compatible .NET development environment
 
-Different approaches and JavaScript PDF libraries were researched and tested, including PDF.js and pdf-lib.
-
-The project required working with PDF rendering, form fields, annotations, signature capture, and data extraction while adapting the implementation to an existing codebase.
-
-👥 Collaboration
-
-This was a collaborative internship project developed with two classmates.
-
-The team independently researched possible solutions, tested different approaches, and integrated the selected functionality into the shared ASP.NET MVC application.
-
-🚀 Running the Project Locally
-
-Requirements
-
-.NET 8 SDK
-Visual Studio 2022 or another compatible .NET development environment
-
-Run the application
+### Installation
 
 Clone the repository:
 
+```bash
 git clone https://github.com/Manelynp/VisorPDF.git
-
+```
 
 Navigate to the project directory:
 
+```bash
 cd VisorPDF
+```
 
-Build the project:
+Build the application:
 
+```bash
 dotnet build
+```
 
 Run the application:
 
+```bash
 dotnet run
+```
 
-Then open the local URL shown in the terminal.
+Open the local URL displayed in the terminal.
 
+## Internship Context
 
-📸 Screenshots
+**Company:** Evolk Bigo Solutions  
+**Location:** Vigo, Spain  
+**Role:** Frontend Developer Intern  
+**Duration:** March–April 2026  
+**Hours:** 140 hours  
+**Project Type:** Collaborative team project (3 students)
 
-| PDF Form Editor                                                                                                                          | Digital Signature                                                                                                                           | Form Data Processing                                                                                                                                           |
-| ---------------------------------------------------------------------------------------------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------- | -------------------------------------------------------------------------------------------------------------------------------------------------------------- |
-| <img src="/img/screenshots/main-interface.PNG" width="100%">                                                                                      | <img src="img/screenshots/signature-modal.PNG" width="100%">                                                                                    | <img src="img/screenshots/saved-signature-JSON.PNG" width="100%">                                                                                                        |
-| Main interface displaying and interacting with the PDF form. The page starts with `fp=true`, indicating the PDF is ready for processing. | Signature capture modal used to add a digital signature to the document. The captured signature is converted to Base64 for data processing. | Extracted PDF form data shown as JSON in the console. After the modified PDF is successfully saved, the processing state changes from `fp=true` to `fp=false`. |
+This internship provided practical experience in JavaScript development, DOM manipulation, PDF processing, form data extraction, JSON structuring, debugging and collaborating within an existing ASP.NET MVC application.
 
+---
 
-📚 Internship Context
-
-Front-End Development Internship
-Evolk Bigo Solutions – Vigo, Spain
-March – April 2026 | 140 hours
-
-This project provided practical experience working with JavaScript, DOM manipulation, PDF processing, form data, debugging, and integration with an existing ASP.NET MVC application.
-
-
-
-
-
+*This project was developed collaboratively as part of a professional training internship.*
